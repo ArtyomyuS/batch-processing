@@ -1,28 +1,11 @@
-<<<<<<< HEAD
-### Java template
-=======
->>>>>>> dcf83a7a5d29e0f286224bafeda2de2d81cddb25
+# Java files and folders
 *.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-<<<<<<< HEAD
 # Intellij files and folders
 .idea
 *.iml
 
-=======
->>>>>>> dcf83a7a5d29e0f286224bafeda2de2d81cddb25
 # Package Files #
 *.jar
 *.war
 *.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-<<<<<<< HEAD
-
-# Created by .ignore support plugin (hsz.mobi)
-=======
->>>>>>> dcf83a7a5d29e0f286224bafeda2de2d81cddb25
