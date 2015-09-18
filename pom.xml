@@ -11,9 +11,12 @@
     <description/>
 
     <properties>
-        <slf4j.version>1.7.10</slf4j.version>
-        <spark.version>1.2.0</spark.version>
+        <jdk.source>1.8</jdk.source>
+        <jdk.target>1.8</jdk.target>
         <scala.version>2.10.5</scala.version>
+        <spark.version>1.2.0</spark.version>
+        <argparse4j.version>0.6.0</argparse4j.version>
+        <slf4j.version>1.7.10</slf4j.version>
     </properties>
 
     <dependencies>
@@ -43,10 +46,32 @@
             <artifactId>spark-core_2.10</artifactId>
             <version>${spark.version}</version>
         </dependency>
+
+
+        <!-- argument parser -->
+        <dependency>
+            <groupId>net.sourceforge.argparse4j</groupId>
+            <artifactId>argparse4j</artifactId>
+            <version>${argparse4j.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.2</version>
+                <configuration>
+                    <source>${jdk.source}</source>
+                    <target>${jdk.target}</target>
+                    <encoding>UTF-8</encoding>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.scala-tools</groupId>
                 <artifactId>maven-scala-plugin</artifactId>

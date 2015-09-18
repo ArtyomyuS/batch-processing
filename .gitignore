@@ -1,5 +1,6 @@
 # Java files and folders
 *.class
+target
 
 # Intellij files and folders
 .idea
@@ -9,3 +10,5 @@
 *.jar
 *.war
 *.ear
+
+
